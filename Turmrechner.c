@@ -29,4 +29,5 @@ main ()
     {
       printf ("Geh Fehler suchen\n");
     }
+  return 0;
 }
