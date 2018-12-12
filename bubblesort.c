@@ -27,13 +27,12 @@ void erzeugeArray(int * array, int anz)
     for(int i = 0; i < anz; i++) {
         array[i] = rand()%100;
     }
-   // array[] = {1, 2, 3, 4, 5, 6};
+   
 }
 
 void zeigeArrayinConsole(int * array, int anz)
-
 {
-    //printf("%s", )
+    
     for(int i = 0; i < anz; i++) {
 
         printf("%d ", array[i]);
