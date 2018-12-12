@@ -6,19 +6,19 @@ void dreiecksTausch(int *, int *);
 void bubblesort(int *, int);
 
 int main()
-
 {
+
     int anz = 10;
     int z[anz];
     erzeugeArray(z, anz);
-    printf("\n Array mit %d zufaelligen Zahlen original: \n", anz);
-
+    printf("\nArray mit %d zufaelligen Zahlen original: \n", anz);
     zeigeArrayinConsole(z, anz);
     bubblesort(z, anz);
-    printf("\n Array mit %d zufaelligen Zahlen sortiert: \n", anz);
-
+    printf("\nArray mit %d zufaelligen Zahlen sortiert: \n", anz);
     zeigeArrayinConsole(z, anz);
-
+    printf("\nMaximalzahl der nötigen Vergleiche wäre (%d-1)*(%d-1) = %d", anz, anz, (anz-1)*(anz-1));
+    printf("\nVerbesserte Version (pro Durchlauf 1 Vergleich weniger) wäre (%d + %d + %d...+ 2 + 1) = %d", anz-1, anz-2, anz-3, (anz/2)*(1+anz)); 
+  
 }
 
 void erzeugeArray(int * array, int anz)
@@ -27,18 +27,14 @@ void erzeugeArray(int * array, int anz)
     for(int i = 0; i < anz; i++) {
         array[i] = rand()%100;
     }
-   
 }
 
 void zeigeArrayinConsole(int * array, int anz)
 {
-    
     for(int i = 0; i < anz; i++) {
-
         printf("%d ", array[i]);
     }
    return 0;
-
 }
 
 void dreiecksTausch(int *x, int *y)
