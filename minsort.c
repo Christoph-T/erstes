@@ -31,7 +31,7 @@ void printArray(int * arr, int anz)
     int i; 
     for (i=0; i < anz; i++) 
         printf("%d ", arr[i]); 
-    printf("\n"); 
+        printf("\n"); 
 } 
 
 void dreieckstausch(int *x, int *y) 
