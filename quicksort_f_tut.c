@@ -78,54 +78,109 @@ int main()
 
 #include <stdio.h>
 
-void erzeugeArray();
+#include <stdio.h>
+
+
+
+void erzeugeArray(int *);
+
 void zeigeArrayinConsole();
+
 void dreieckstausch();
+
 int teile(int *, int, int);
+
 void quickSort(int *, int, int);
 
+
+
 int main()
+
 {
+    printf("geht");
     return 0;
+
 }
 
-void erzeugeArray(int *x, )
+
+
+void erzeugeArray(int *x)
+{
+    
+}
+
 
 int teile(int *x, int links, int rechts) {
+
     
+
     int i=links; int j=rechts-1; int pivot=x[rechts];
+
     int temp;
+
     
+
     do {
+
         while(x[i]<pivot && i<rechts-1) {
+
             i++;
+
         }
+
         while(x[j]>=pivot && j>links) {
+
             j--;
+
         }
+
         if(i<j) {
+
             temp=x[i];
+
             x[i]=x[j];
+
             x[j]=temp;
+
             
+
         }
-    } while(i<j);
-    if(x[i]>pivot) {
-        x[rechts]=x[i];
-        x[i] =pivot;
+
     }
+    while(i<j); {
+
+    if(x[i]>pivot) {
+
+        x[rechts]=x[i];
+
+        x[i] =pivot;
+
+        }
+    }
+
 
     return i;
+
 }
+
+
 
 void quickSort(int *x, int links, int rechts) {
-    int teiler = 0;
-    if(links < rechts) {
-        
-    teiler = teile(x, links, rechts);
-    quickSort(x, links, rechts);
-    quickSort(x, teiler = 1, rechts);
-    
-    }
-}
 
+    int teiler = 0;
+
+    if(links < rechts) {
+
+        
+
+    teiler = teile(x, links, rechts);
+
+    quickSort(x, links, rechts);
+
+    quickSort(x, teiler = 1, rechts);
+
+    
+
+    }
+
+}
