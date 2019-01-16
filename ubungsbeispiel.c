@@ -25,12 +25,12 @@ int main()
     for(int x=0; x<length; x++){
         summe = summe + array[x];
     }
-    
+
     printf("%d", summe);
     mittelwert = summe/length;
-    printf("\n2)Mittelwert:\n %d", mittelwert);
+    printf("\n2)Mittelwert:\n %d\n", mittelwert);
     
-    printf("\nZahlen:\n");
+    /*printf("\nZahlen:\n");
     for(int z = 0; z < length; z++) {
         float multi = 1.20;
         float bedingung = array[z]*multi;
@@ -45,20 +45,25 @@ int main()
        } 
        
        printf("%d ", array[z]);
+    }*/
+
+    int max = array[0];
+    int min = max;
+    for(int u = 0; u < length; u++) {
+  
+       if(array[u] > max) {
+          max = array[u];
+        }    
+       
+       if(array[u] < min) {
+          min = array[u];
+        } 
+     
     }
-    /*
-    int a = 3;
-    float b = 1.20;
-    float foo = a*b;
-    printf("\nTest: %f", foo);
+    printf("4)Größte Zahl aus Array:\n");
+    printf(" %d\n", max);
+    printf("4)Kleinste Zahl aus Array:\n");
+    printf(" %d ", min);
     
     
-    for(int z = 0; z < length; z++) {
-        float multi = 1.20;
-        float bedingung = *multi;
-        
-        
-        
-    }
-    */
 }
