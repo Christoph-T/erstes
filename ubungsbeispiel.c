@@ -30,7 +30,7 @@ int main()
     mittelwert = summe/length;
     printf("\n2)Mittelwert:\n %d\n", mittelwert);
     
-    /*printf("\nZahlen:\n");
+    printf("\n3)Ausreißer Array:\n");
     for(int z = 0; z < length; z++) {
         float multi = 1.20;
         float bedingung = array[z]*multi;
@@ -43,9 +43,8 @@ int main()
        if(array[z] < mittelwert*0.80) {
            array[z] = mittelwert;
        } 
-       
        printf("%d ", array[z]);
-    }*/
+    }
 
     int max = array[0];
     int min = max;
@@ -60,10 +59,12 @@ int main()
         } 
      
     }
-    printf("4)Größte Zahl aus Array:\n");
+    printf("\n4)Größte Zahl aus Array:\n");
     printf(" %d\n", max);
     printf("4)Kleinste Zahl aus Array:\n");
     printf(" %d ", min);
     
-    
+    /*float ausgabe = log10(87);
+    printf("\n%d", ausgabe);
+    */
 }
